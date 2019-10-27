@@ -1,0 +1,25 @@
+{
+  "asset": {
+    "version": "0.0",
+    "tilesetVersion": "1.0.0-obj23dtiles",
+    "gltfUpAxis": "Y"
+  },
+  "geometricError": 200,
+  "root": {
+    "boundingVolume": {
+      "region": [
+        2.0956985136855306,
+        0.5257850149723757,
+        2.0959927189504373,
+        0.5260526162476632,
+        0,
+        0
+      ]
+    },
+    "geometricError": 0,
+    "refine": "ADD",
+    "content": {
+      "url": "hydrant.i3dm"
+    }
+  }
+}

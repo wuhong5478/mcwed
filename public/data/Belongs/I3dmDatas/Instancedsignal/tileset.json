@@ -1,0 +1,25 @@
+{
+  "asset": {
+    "version": "0.0",
+    "tilesetVersion": "1.0.0-obj23dtiles",
+    "gltfUpAxis": "Y"
+  },
+  "geometricError": 200,
+  "root": {
+    "boundingVolume": {
+      "region": [
+        2.095682251808389,
+        0.5257647978080741,
+        2.095993539412216,
+        0.5260524535487077,
+        0,
+        0
+      ]
+    },
+    "geometricError": 0,
+    "refine": "ADD",
+    "content": {
+      "url": "signal.i3dm"
+    }
+  }
+}

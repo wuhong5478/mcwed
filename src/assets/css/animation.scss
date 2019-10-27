@@ -1,0 +1,138 @@
+// 3D模式
+@keyframes rotate3dLeft{ // 向左翻转，给leftBox
+  100%{
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+}
+.rotate3dLeft{
+  animation: rotate3dLeft 1s linear forwards;
+}
+.rotate3dLeft2{
+  animation: rotate3dLeft reverse 1s linear forwards;
+}
+
+@keyframes rotate3dRight{ // 向右翻转，给rightBox
+  100%{
+    transform: translateX(100%) rotateY(180deg);
+  }
+}
+.rotate3dRight{
+  animation: rotate3dRight 1s linear forwards;
+}
+.rotate3dRight2{
+  animation: rotate3dRight reverse 1s linear forwards;
+}
+
+@keyframes rotate3dTop{ // 向上翻转，给centerBox
+  100%{
+    transform: translateY(-100%) rotateX(-180deg);
+    opacity: 0;
+    display: none;
+  }
+}
+.rotate3dTop{
+  animation: rotate3dTop 1s linear forwards;
+}
+.rotate3dTop2{
+  animation: rotate3dTop reverse 1s linear forwards;
+}
+
+@keyframes rotate3dBottom{ // 向上翻转，给bottom-count
+  0%{
+    transform: translateY(100%) rotateX(180deg);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0) rotateX(0);
+    opacity: 1;
+  }
+}
+.rotate3dBottom{
+  animation: rotate3dBottom 1s linear forwards;
+}
+.rotate3dBottom2{
+  animation: rotate3dBottom reverse 1s linear forwards;
+}
+
+
+// 平移模式
+@keyframes translateBottom{ // 向下移动，给leftBox和rightBox
+  100%{
+    transform: translateY(100%);
+  }
+}
+.translateBottom{
+  animation: translateBottom 1s linear forwards;
+}
+.translateBottom2{
+  animation: translateBottom reverse 1s linear forwards;
+}
+
+@keyframes translateTop{ // 向上移动，给centerBox
+  100%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+.translateTop{
+  animation: translateTop 1s linear forwards;
+}
+.translateTop2{
+  animation: translateTop reverse 1s linear forwards;
+}
+
+
+// 旋转模式
+@keyframes rotateXLeft{ // 向左，给leftBox
+  100%{
+    transform: translateX(-200%) rotate(-90deg);
+  }
+}
+
+@keyframes rotateXRight{ // 向右，给rightBox
+  100%{
+    transform: translateX(200%) rotate(90deg);
+  }
+}
+
+@keyframes rotateXTop{ // 向上，给centerBox
+  100%{
+    transform: translateY(-100%) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+
+// 缩放模式
+@keyframes scale3d{ // 先放大再缩小消失，给所有
+  10%{
+    transform: scale(1.2, 1.2);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+  }
+}
+
+@keyframes scale3dAlarm{ // 先放大再缩小消失，给所有
+  0%{
+    transform: scale(0.2, 0.2);
+    opacity: 0;
+  }
+  90%{
+    transform: scale(1.2, 1.2);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+.scale3d{
+  animation: scale3d 1s linear forwards;
+}
+.scale3dAlarm{
+  animation: scale3dAlarm 1s linear forwards;
+}

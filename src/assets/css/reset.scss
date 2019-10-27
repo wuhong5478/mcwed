@@ -1,0 +1,52 @@
+html,
+body,
+div,
+p,
+span,
+table,
+i,
+a,
+ul,
+li,
+input {
+	padding: 0;
+	margin: 0; 
+  box-sizing: content-box;
+  list-style: none;
+}
+
+.el-message__icon{
+  font-size: 14px;
+}
+
+::-webkit-scrollbar-track-piece {
+  //滚动条凹槽的颜色，还可以设置边框属性
+  background-color: #394854;
+}
+
+::-webkit-scrollbar {
+  //滚动条的宽度
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  //滚动条的设置
+  background-color: #D8D8D8;
+  background-clip: padding-box;
+  min-height: 28px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
